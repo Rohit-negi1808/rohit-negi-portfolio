@@ -91,9 +91,14 @@ export const skillCategories = [
   "Tools",
 ];
 
-// Projects — id is used for the /projects/:id route.
-// Leave github/live empty ("") if a link isn't available yet;
-// the UI hides that button automatically.
+// ---------------------------------------------------------------------
+// PROJECTS — id is used for the /projects/:id route.
+// Fill in `github` with the repo URL and `live` with the deployed URL
+// (Vercel, Netlify, etc.) for each project below. Leave either one as ""
+// to hide that link/button — the UI already handles both cases:
+//   github: "https://github.com/yourname/repo-name"
+//   live:   "https://your-project.vercel.app"
+// ---------------------------------------------------------------------
 export const projects = [
   {
     id: "campus-finds",
@@ -116,8 +121,8 @@ export const projects = [
       "Complaint submission and feedback handling",
       "Responsive, interactive UI for tracking items",
     ],
-    github: "",
-    live: "",
+    github: "https://github.com/Rohit-negi1808/CampusFinds-Major",
+    live: "https://campusfindsmajor.vercel.app/",
   },
   {
     id: "grocery-picker",
@@ -140,7 +145,7 @@ export const projects = [
       "Live price tracking",
       "Fractional & 0/1 knapsack based optimization",
     ],
-    github: "",
+    github: "https://github.com/Rohit-negi1808/Grocery-Item-Picker",
     live: "",
   },
   {
@@ -163,8 +168,8 @@ export const projects = [
       "Dynamic content browsing UI",
       "Streaming-service-style layout",
     ],
-    github: "",
-    live: "",
+    github: "https://github.com/Rohit-negi1808/Netflix-UI-Replica",
+    live: "netflix-ui-replica-smoky.vercel.app",
   },
   {
     id: "linkedin-replica",
@@ -187,7 +192,7 @@ export const projects = [
       "Post creation",
       "Profile viewing",
     ],
-    github: "",
+    github: "https://github.com/Rohit-negi1808/Linkedin-Ui-Replica",
     live: "",
   },
 ];

@@ -38,6 +38,7 @@ function ProjectCard({ project }) {
   const navigate = useNavigate();
   const detailsUrl = `/projects/${project.id}`;
 
+
   return (
     <motion.div
       layout
@@ -55,6 +56,19 @@ function ProjectCard({ project }) {
     >
       <div className="project-image">
         <img src={project.image} alt={`${project.title} preview`} />
+        <div className="project-image-overlay">
+          <span className="project-image-cta">
+            {project.live ? (
+              <>
+                <FiExternalLink /> Visit Live Site
+              </>
+            ) : (
+              <>
+                <FiArrowUpRight /> View Case Study
+              </>
+            )}
+          </span>
+        </div>
       </div>
       <div className="project-body">
         <span className="project-category">{project.category}</span>

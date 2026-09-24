@@ -1484,3 +1484,153 @@ textarea.form-control-custom {
     display: none;
   }
 }
+
+/* ==========================================================
+   PROJECT DETAILS — LAYOUT ADJUSTMENTS
+   These overrides only affect the individual project-detail page.
+   ========================================================== */
+
+/* Reduce the space between the fixed navbar and "Back to Projects".
+   :has() targets only the project-detail section, so other sections
+   of the portfolio are not affected. */
+section:has(.project-header-row) {
+  padding-top: calc(var(--nav-h) + 20px) !important;
+  padding-bottom: 80px;
+}
+
+/* Reduce the gap between Back to Projects and the project heading. */
+section:has(.project-header-row) .back-link {
+  margin-bottom: 18px;
+}
+
+/* Keep the project title on the left and the Live Site button on
+   the right, with the button vertically aligned around the title. */
+.project-header-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 30px;
+  margin-bottom: 24px;
+}
+
+/* Keep the project heading compact. */
+.project-header-row > div:first-child .section-tag {
+  margin-bottom: 6px;
+}
+
+.project-header-row > div:first-child .section-heading {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.project-header-row > div:first-child .section-sub {
+  margin-bottom: 0;
+}
+
+/* Put Visit Live Site on the same visual line as the project title. */
+.details-live-btn {
+  margin-top: 34px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* ==========================================================
+   PROJECT SCREENSHOT
+   ========================================================== */
+
+/* Make the preview narrower so the complete screenshot appears
+   much earlier in the first viewport instead of extending far below. */
+.details-media {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 50px;
+}
+
+/* Browser-style top bar. */
+.details-media-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-bottom: none;
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: var(--surface);
+}
+
+/* Screenshot container. */
+.details-media-frame {
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 0 0 var(--radius) var(--radius);
+  background: var(--surface);
+}
+
+/* Show the complete screenshot without cropping or stretching. */
+.details-media-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Live-site hover overlay. */
+.details-media-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--bg) 55%, transparent);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.details-media-frame:hover .details-media-overlay {
+  opacity: 1;
+}
+
+.details-media-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ==========================================================
+   PROJECT DETAILS — MOBILE
+   ========================================================== */
+
+@media (max-width: 900px) {
+  section:has(.project-header-row) {
+    padding-top: calc(var(--nav-h) + 16px) !important;
+  }
+
+  section:has(.project-header-row) .back-link {
+    margin-bottom: 22px;
+  }
+
+  .project-header-row {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 22px;
+  }
+
+  .details-live-btn {
+    margin-top: 0;
+  }
+
+  .details-media {
+    max-width: 100%;
+    margin-bottom: 44px;
+  }
+}
