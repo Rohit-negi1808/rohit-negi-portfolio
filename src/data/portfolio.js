@@ -1,12 +1,3 @@
-// ============================================================
-// PORTFOLIO DATA
-// ------------------------------------------------------------
-// This is the ONLY file you should need to edit to keep your
-// portfolio up to date. Update your name, links, skills,
-// projects, education and certifications here — the components
-// just read from this file.
-// ============================================================
-
 export const profile = {
   name: "Rohit Negi",
   title: "MERN Stack Developer",
