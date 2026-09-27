@@ -208,7 +208,7 @@ export const education = [
     degree: "Intermediate (12th)",
     institution: "SGRR Public School, Bhaniyawala",
     period: "Apr 2019 – Apr 2020",
-    score: "77.5%",
+    score: "82.6%",
   },
   {
     degree: "Matriculation (10th)",
