@@ -16,10 +16,9 @@ export const profile = {
   },
 };
 
-// About section short story + focus areas
 export const about = {
   paragraphs: [
-    "I'm a MERN stack developer based in India. I hold a Master of Computer Applications from Chandigarh University, where I graduated with a CGPA of 8.92 and built a strong foundation in full-stack development and problem-solving.",
+    "I'm a MERN stack developer based in India. I hold a Master of Computer Applications from Chandigarh University, where I graduated with a CGPA of 8.89 and built a strong foundation in full-stack development and problem-solving.",
     "My work centers on the MERN stack — I take an application from a rough idea to a working product with a clean, responsive interface, a well-structured API and a database layer that holds up. Alongside that, I work with Python and its data libraries for analysis and visualization.",
     "I'm currently open to full-time opportunities where I can contribute to a real engineering team, ship software that people actually use, and keep growing as an engineer.",
   ],
@@ -94,7 +93,7 @@ export const projects = [
   {
     id: "campus-finds",
     title: "Campus Finds",
-    period: "Aug 2025 – Nov 2025",
+    period: "Jan 2026 – Aug 2026",
     category: "MERN",
     technologies: ["React", "Node.js", "Express.js", "MongoDB"],
     image: "/projects/campusfinds.png",
@@ -116,9 +115,43 @@ export const projects = [
     live: "https://campusfindsmajor.vercel.app/",
   },
   {
+  id: "smartcart",
+  title: "SmartCart",
+  period: "Dec 2025 – Feb 2026",
+  category: "MERN",
+  technologies: [
+    "React",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Gemini API",
+    "SMTP",
+    "Nodemailer"
+  ],
+  image: "/projects/smartcart.png",
+  shortDescription:
+    "An AI-powered laptop discovery platform with smart search, product comparison, recommendations, and an AI shopping assistant.",
+  overview:
+    "SmartCart helps users discover and compare laptops based on their requirements, combining AI-powered guidance with a structured product catalog and secure email verification.",
+  problem:
+    "Choosing a laptop often requires comparing multiple specifications, prices, and use cases across different products.",
+  solution:
+    "Built a MERN stack platform that combines AI-powered search, product filtering, comparison, recommendations, and email OTP verification to simplify laptop selection.",
+  features: [
+    "AI-powered laptop search and recommendations",
+    "Product filtering and side-by-side comparison",
+    "Wishlist and search history",
+    "AI shopping assistant",
+    "Email OTP verification using SMTP and Nodemailer",
+    "JWT-based user authentication"
+  ],
+  github: "https://github.com/Rohit-negi1808/SmartCart",
+  live: "https://smart-cart-kohl.vercel.app/",
+  },
+  {
     id: "grocery-picker",
     title: "Grocery Picker",
-    period: "Mar 2025 – Apr 2025",
+    period: "Mar 2025 – May 2025",
     category: "Frontend",
     technologies: ["HTML", "CSS", "JavaScript"],
     image: "/projects/grocery-picker.png",

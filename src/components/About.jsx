@@ -5,7 +5,6 @@ function About() {
   return (
     <section id="about">
       <div className="container">
-        <span className="section-tag">{"// about"}</span>
         <h2 className="section-heading">A bit about me</h2>
 
         <div className="about-grid">
