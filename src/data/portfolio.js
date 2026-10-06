@@ -81,14 +81,6 @@ export const skillCategories = [
   "Tools",
 ];
 
-// ---------------------------------------------------------------------
-// PROJECTS — id is used for the /projects/:id route.
-// Fill in `github` with the repo URL and `live` with the deployed URL
-// (Vercel, Netlify, etc.) for each project below. Leave either one as ""
-// to hide that link/button — the UI already handles both cases:
-//   github: "https://github.com/yourname/repo-name"
-//   live:   "https://your-project.vercel.app"
-// ---------------------------------------------------------------------
 export const projects = [
   {
     id: "campus-finds",
